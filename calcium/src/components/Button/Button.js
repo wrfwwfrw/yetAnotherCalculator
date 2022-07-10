@@ -11,7 +11,7 @@ const Button = ({onPress, text, type="Primary", bgc, fgc}) => {
     <Pressable onPress={onPress}
     style={styles.buttonStyle,
        styles['buttonStyle_${type}'],
-       bgc ? {backgroundColor:bgc} : {backgroundColor:"blue"}
+       bgc ? {backgroundColor:'#4A6D72'} : {backgroundColor:"#4A6D7C"}
      }>
       <View style={styles.text_container}>
         <Text style={styles.text, fgc ? {color:fgc} : {}}>{text}</Text>
@@ -32,11 +32,11 @@ const styles = StyleSheet.create({
     textAlign:'center',
     alignItems:'center',
     justifyContent:'center',
-    height:80
+    height:80,
   },
   text: {
     frontWeight: 'bold',
-    color: 'white'
+    color: 'white',
   }
 })
 

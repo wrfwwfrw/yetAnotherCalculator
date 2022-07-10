@@ -112,7 +112,6 @@ const SimpleCalc = () => {
           <Button
             text="AC"
             fgc="white"
-            bgc="grey"
             onPress={() => setNumber("0")} />
         </View>
         <View style={styles.smallButton}>
@@ -257,38 +256,44 @@ const SimpleCalc = () => {
 const styles = StyleSheet.create({
   root:{
     width:'100%',
-    height:'700',
+    height:'100',
+    backgroundColor:"#27213C",
     flexWrap:"wrap",
     flexDirection:"column"
   },
   smallButton:{
     borderWidth:5,
-    borderColor:"white",
+    borderColor:"#4A6D7C",
+    borderRadius:20,
     flex:1
   },
   zeroButton:{
     borderWidth:5,
-    borderColor:"white",
-    flex:2
+    borderColor:"#4A6D7C",
+    flex:2,
+    borderRadius:180
   },
   buttonArea:{
     flexWrap:"wrap",
     flexDirection:"row",
+    backgroundColor:"#27213C"
+
   },
   textArea:{
     height:50,
     borderWidth:5,
-    borderColor:'white',
-    backgroundColor:'white'
+    borderColor:'#27213C',
+    backgroundColor:"#27213C"
   },
   text:{
     marginTop:7,
+    marginBottom:3,
     fontSize:30,
     textAlign:'right',
     height:50,
-    borderWidth:5,
-    borderColor:'white',
-    backgroundColor:'white'
+    borderWidth:1,
+    borderColor:'#5A352A',
+    backgroundColor:'#A47963',
   }
 })
 export default SimpleCalc

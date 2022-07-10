@@ -18,7 +18,7 @@ const App: () => Node = () => {
 const styles = StyleSheet.create({
   bgStyle: {
     flex: 1,
-    backgroundColor:'#0B032D'
+    backgroundColor:'#27213C'
   }
 });
 
